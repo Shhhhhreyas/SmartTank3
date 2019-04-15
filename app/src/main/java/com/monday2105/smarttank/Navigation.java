@@ -81,8 +81,8 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
 
         Intent intent = getIntent();
         SERVICE_NUMBER = intent.getStringExtra("SERVICE_NUMBER");
-        smsBroadcastReceiver = new SmsBroadcastReceiver(SERVICE_NUMBER, SERVICE_CONDITION, this);
-        registerReceiver(smsBroadcastReceiver, new IntentFilter(Telephony.Sms.Intents.SMS_RECEIVED_ACTION));
+        //smsBroadcastReceiver = new SmsBroadcastReceiver(SERVICE_NUMBER, SERVICE_CONDITION, this);
+        //registerReceiver(smsBroadcastReceiver, new IntentFilter(Telephony.Sms.Intents.SMS_RECEIVED_ACTION));
 
         /*smsBroadcastReceiver.setListener(new SmsBroadcastReceiver.Listener() {
             @Override

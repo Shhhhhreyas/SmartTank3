@@ -71,13 +71,13 @@ public class un_lock extends Fragment implements View.OnClickListener{
                     locked = false;
                     String strSQL = "UPDATE " + TABLE_NAME + " SET lock = '0' WHERE name = \"" + value + "\"";
                     db.execSQL(strSQL);
-                    SmsManager.getDefault().sendTextMessage(SERVICE_NUMBER, null, "-----SmartTank-----\nOPEN", null, null);
+                    SmsManager.getDefault().sendTextMessage(SERVICE_NUMBER, null, "-----SmartTank-----\nvbnm", null, null);
                 } else {
                     imageView.setImageResource(R.drawable.locked);
                     locked = true;
                     String strSQL = "UPDATE " + TABLE_NAME + " SET lock = '1' WHERE name = \"" + value + "\"";
                     db.execSQL(strSQL);
-                    SmsManager.getDefault().sendTextMessage(SERVICE_NUMBER, null, "-----SmartTank-----\nCLOSE", null, null);
+                    SmsManager.getDefault().sendTextMessage(SERVICE_NUMBER, null, "-----SmartTank-----\nlzxc", null, null);
                 }
 
                 break;
