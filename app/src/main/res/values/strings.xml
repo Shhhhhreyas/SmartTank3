@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SmartTank</string>
+    <string name="splashimage">SplashImage</string>
+    <string name="tank_initialization">Tank Initialization</string>
+    <string name="icon">Icon</string>
+    <string name="contact_number">Tank\'s Contact Number</string>
+    <string name="goToTank">Go To Tank</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nav_header_title">Smart Tank</string>
+    <string name="nav_header_subtitle">160020006@iitdh.ac.in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="tank_name">Tank\'s Name</string>
+    <string name="delete_vehicle">Delete Vehicle</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="welcome">welcome</string>
+    <string name="rename_vehicle">Rename Vehicle</string>
+</resources>

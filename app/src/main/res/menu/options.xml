@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/rename_vehicle"
+        android:orderInCategory="100"
+        android:title="@string/rename_vehicle"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_vehicle"
+        android:orderInCategory="100"
+        android:title="@string/delete_vehicle"
+        app:showAsAction="never" />
+</menu>
