@@ -99,14 +99,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         "number varchar(13) NOT NULL," +
                         "name varchar(25) NOT NULL," +
                         "lock INTEGER NOT NULL," +
+                        "fuel varchar NOT NULL," +
+                        "lat varchar NOT NULL," +
+                        "long varchar NOT NULL," +
                         "sno INTEGER PRIMARY KEY);");
 
 
                 String insertSQL = "INSERT INTO " + TABLE_NAME + "\n" +
-                        "(number, name, lock, sno)\n" +
+                        "(number, name, lock, fuel, lat, long,sno)\n" +
                         "VALUES \n" +
-                        "(?,?,?,?);";
-                db.execSQL(insertSQL, new String[]{SERVICE_NUMBER,tank_Name,"1","1"});
+                        "(?,?,?,?,?,?,?);";
+                db.execSQL(insertSQL, new String[]{SERVICE_NUMBER,tank_Name,"1","0","0","0","1"});
             }
             catch (Exception e){
                 Log.d("SQL make table",e.getMessage());

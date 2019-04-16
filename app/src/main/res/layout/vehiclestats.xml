@@ -53,15 +53,36 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_weight="1"
-            android:text="Position"
+            android:text="Latitude"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/positionText"
+            android:id="@+id/latitudeText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_column="2"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:text="Longitude"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/longitudeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
             android:layout_weight="1"
             android:text=""
             android:textAlignment="center"
@@ -73,10 +94,40 @@
             android:id="@+id/positionRefresh"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_column="3"
+            android:layout_column="5"
             android:layout_weight="1"
             android:text="Refresh"
+            android:textSize="12sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/browser_actions_bg_grey"
+        android:stretchColumns="*">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:text="Search PetrolPump"
             android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/findPump"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:text=""
+            android:linksClickable="true"
+            android:autoLink="all"
+            android:textColorLink="@color/tabColor"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textColor="@color/tabColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
